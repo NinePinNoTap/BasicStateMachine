@@ -78,11 +78,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameTimer.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainGameState.cpp" />
+    <ClCompile Include="MainMenuState.cpp" />
+    <ClCompile Include="SplashScreenState.cpp" />
+    <ClCompile Include="StateMachine.cpp" />
+    <ClCompile Include="System.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameTimer.h" />
+    <ClInclude Include="Helper.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="MainGameState.h" />
     <ClInclude Include="MainMenuState.h" />

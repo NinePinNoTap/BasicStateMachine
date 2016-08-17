@@ -6,32 +6,17 @@
 class MainGameState : public State
 {
 public:
-	virtual void terminate()
-	{
+	MainGameState();
+	~MainGameState();
 
-	}
-	virtual void loadState()
-	{
-		m_changeState = EGameState::State_None;
-	}
-	virtual void unloadState()
-	{
+	virtual void initialise();
+	virtual void terminate();
 
-	}
-	virtual void updateState(float dt = 0.0f)
-	{
-		if (InputManager::Instance()->getKeyDown(VK_ESCAPE))
-		{
-			m_changeState = EGameState::State_Menu_Main;
-		}
-	}
-	virtual void renderState()
-	{
-		system("CLS");
+	virtual void loadState();
+	virtual void unloadState();
 
-		printf("Game Loop!\n");
-		printf("Escape to return to main menu");
-	}
+	virtual void updateState(float dt = 0.0f);
+	virtual void renderState();
 
 private:
 };
